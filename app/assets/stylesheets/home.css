@@ -1,0 +1,12 @@
+.buttonText {
+    font-size:12px;
+    font-family: Helvetica, Arial, sans-serif;
+    pointer-events:none;
+}
+.button {
+    cursor: pointer;
+}
+
+.button {
+  margin-top: 100px;
+}
