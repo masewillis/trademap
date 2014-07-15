@@ -257,7 +257,7 @@ var trade_partners = [
         }
     }
 
-  addArcs(1);
+  addArcs(0);
 
 
  //bubbles, custom popup on hover template
