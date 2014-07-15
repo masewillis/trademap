@@ -7,7 +7,8 @@ var map = new Datamap({
     defaultFill: '#383838',
     lt50: 'rgba(0,244,244,0.9)',
     gt50: 'rgb(18, 5, 95)',
-    ocean: 'rgb(48, 75, 222)'
+    ocean: 'rgb(48, 75, 222)',
+    pin: 'rgb(255,104,57)'
   },
 
   data: {
@@ -256,7 +257,7 @@ var trade_partners = [
         }
     }
 
-  addArcs(0);
+  addArcs(1);
 
 
  //bubbles, custom popup on hover template
