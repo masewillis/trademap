@@ -22,26 +22,15 @@ var map = new Datamap({
 var trade_partners = [
 
 // map.arc([
-//australia
+// israel
 {
  origin: {
      latitude: 38.883333,
      longitude: -77
  },
  destination: {
-     latitude: -35.26666667,
-     longitude: 149.133333
- }
-},
-//bahrain
-{
- origin: {
-     latitude: 38.883333,
-     longitude: -77
- },
- destination: {
-     latitude: 26.23333333,
-     longitude: 50.566667
+     latitude: 31.76666667,
+     longitude: 35.233333
  }
 },
 //canada
@@ -55,6 +44,39 @@ var trade_partners = [
      longitude: -75.7
  }
 },
+//mexico
+{
+ origin: {
+     latitude: 38.883333,
+     longitude: -77
+ },
+ destination: {
+     latitude: 19.43333333,
+     longitude: -99.133333
+ }
+},
+//jordan
+{
+ origin: {
+     latitude: 38.883333,
+     longitude: -77
+ },
+ destination: {
+     latitude: 31.95,
+     longitude: 35.933333
+ }
+},
+//australia
+{
+ origin: {
+     latitude: 38.883333,
+     longitude: -77
+ },
+ destination: {
+     latitude: -35.26666667,
+     longitude: 149.133333
+ }
+},
 //chile
 {
  origin: {
@@ -66,17 +88,62 @@ var trade_partners = [
      longitude: -70.666667
  }
 },
-//colombia
+//singapore
 {
  origin: {
      latitude: 38.883333,
      longitude: -77
  },
  destination: {
-     latitude: 4.6,
-     longitude: -74.083333
+     latitude: 1.283333333,
+     longitude: 103.85
  }
 },
+//bahrain
+{
+ origin: {
+     latitude: 38.883333,
+     longitude: -77
+ },
+ destination: {
+     latitude: 26.23333333,
+     longitude: 50.566667
+ }
+},
+//morocco
+{
+ origin: {
+     latitude: 38.883333,
+     longitude: -77
+ },
+ destination: {
+     latitude: 34.01666667,
+     longitude: -6.816667
+ }
+},
+//oman
+{
+ origin: {
+     latitude: 38.883333,
+     longitude: -77
+ },
+ destination: {
+     latitude: 23.61666667,
+     longitude: 58.583333
+ }
+},
+//peru
+{
+ origin: {
+     latitude: 38.883333,
+     longitude: -77
+ },
+ destination: {
+     latitude: -12.05,
+     longitude: -77.05
+ }
+},
+
 //costa rica
 {
  origin: {
@@ -132,61 +199,6 @@ var trade_partners = [
      longitude: -87.216667
  }
 },
-// israel
-{
- origin: {
-     latitude: 38.883333,
-     longitude: -77
- },
- destination: {
-     latitude: 31.76666667,
-     longitude: 35.233333
- }
-},
-//jordan
-{
- origin: {
-     latitude: 38.883333,
-     longitude: -77
- },
- destination: {
-     latitude: 31.95,
-     longitude: 35.933333
- }
-},
-//south korea
-{
- origin: {
-     latitude: 38.883333,
-     longitude: -77
- },
- destination: {
-     latitude: 37.55,
-     longitude: 126.983333
- }
-},
-//mexico
-{
- origin: {
-     latitude: 38.883333,
-     longitude: -77
- },
- destination: {
-     latitude: 19.43333333,
-     longitude: -99.133333
- }
-},
-//morocco
-{
- origin: {
-     latitude: 38.883333,
-     longitude: -77
- },
- destination: {
-     latitude: 34.01666667,
-     longitude: -6.816667
- }
-},
 //nicaragua
 {
  origin: {
@@ -196,17 +208,6 @@ var trade_partners = [
  destination: {
      latitude: 12.13333333,
      longitude: -86.25
- }
-},
-//oman
-{
- origin: {
-     latitude: 38.883333,
-     longitude: -77
- },
- destination: {
-     latitude: 23.61666667,
-     longitude: 58.583333
  }
 },
 //panama
@@ -220,28 +221,28 @@ var trade_partners = [
      longitude: -79.533333
  }
 },
-//peru
+//colombia
 {
  origin: {
      latitude: 38.883333,
      longitude: -77
  },
  destination: {
-     latitude: -12.05,
-     longitude: -77.05
+     latitude: 4.6,
+     longitude: -74.083333
  }
 },
-//singapore
+//south korea
 {
  origin: {
      latitude: 38.883333,
      longitude: -77
  },
  destination: {
-     latitude: 1.283333333,
-     longitude: 103.85
+     latitude: 37.55,
+     longitude: 126.983333
  }
-}
+},
 // ], {strokeWidth: 2});
 ]
 
@@ -255,7 +256,7 @@ var trade_partners = [
         }
     }
 
-  addArcs(1);
+  addArcs(0);
 
 
  //bubbles, custom popup on hover template
