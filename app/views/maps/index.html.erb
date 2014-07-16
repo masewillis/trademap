@@ -3,6 +3,7 @@
 <meta charset="utf-8">
 
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+  
   <script src="libraries/jquery.js"></script>
   <script src="libraries/jquery-ui.min.js"></script>
   <script src="libraries/underscore.js"></script>
@@ -11,9 +12,11 @@
   <script src="libraries/topojson.js"></script>
   <script src="libraries/datamaps.world.js"></script>
   <script src="libraries/nv.d3.min.js"></script>
+  <script src="libraries/dimple.min.js"></script>
 
   <link href="css/home.css" rel="stylesheet" type="text/css">
   <link href="css/chart.css" rel="stylesheet" type="text/css">
+
   <script>
   $(function() {
     $( "#tabs" ).tabs();
@@ -24,29 +27,45 @@
 <div id="tabs">
   <ul>
     <li><a href="#tabs-1">Map</a></li>
-    <li><a href="#tabs-2">Data</a></li>
-    <li><a href="#tabs-3">New</a></li>
+    <li><a href="#tabs-2">NAFTA</a></li>
+    <li><a href="#tabs-3">News</a></li>
   </ul>
   <div id="tabs-1">
+
     <div id="container1" style="position: relative; width: 100%; max-height: 700px;"></div>
-
   </div>
+
   <div id="tabs-2">
-    <div id="container2" style="position: relative; width: 100%; max-height: 700px;"></div>
-  </div>
-  <div id="tabs-3">
-    <script src="javascripts/charts.js"></script>
+    <div id="chartContainer">
+                <div class="col-md-10 col-md-offset-1" id="chart">
+                  <h4 style="padding-left:60px;">Export Unit Value</h4>
+                  <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary active" id="sbar">
+                      <input type="radio" name="options"> Bar
+                    </label>
+                    <label class="btn btn-primary" id="line">
+                      <input type="radio" name="options"> Line
+                    </label>
+                    <label class="btn btn-primary" id="area">
+                      <input type="radio" name="options"> Area
+                    </label>
+                    <label class="btn btn-primary" id="strm">
+                      <input type="radio" name="options"> Stream
+                    </label>
+                  </div>
+                </div>
+                <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+                <script src="javascripts/charts.js"></script>
 
-      <div id="chart">
-        <svg></svg>
-      </div>
-  </div>
+        </div>
+    <div id="tabs-3">
+    </div>
 </div>
 
+<script src="javascripts/maps.js"></script>
+<script src="javascripts/potentialagreements.js"></script>
+<link href="css/nv.d3.min.css" rel="stylesheet" type="text/css">
 
 
-  <script src="javascripts/maps.js"></script>
-  <script src="javascripts/potentialagreements.js"></script>
-  <link href="css/nv.d3.min.css" rel="stylesheet" type="text/css">
 
 </body>
